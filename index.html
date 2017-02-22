@@ -1,9 +1,13 @@
+<!--File name:index.html
+Author's Name: Akhil Thakkar
+Student ID: 200300312
+Date:February 22, 2017-->
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-  <title>My Simple Calculator App</title>
+  <title>Shopping List</title>
   <!-- CSS Section -->
   <link rel="stylesheet" href="/Scripts/lib/jquery-mobile-bower/css/jquery.mobile-1.4.5.min.css" type="text/css">
    <script src="/Scripts/lib/jquery/dist/jquery.min.js" type="text/javascript"></script>
@@ -20,18 +24,28 @@
     <header>
          <H2>Create Shopping List</H2>
     </header>
-
-     Enter new shopping list name:<input id="text" type= "text" value="My shoppping List" name="sumbitText">
+     Enter new shopping list name:<input id="text" type= "text" value="My shoppping List" name="MainheadingText">
+     <!--List of items-->
     <ol id="shoppingList">
-      Enter new list item:
-        <input type="text" value="Apples"/> 
-        <input type="text"value="Eggs"/>
-        <input type="text"value=""/>
-        <input type="text"value=""/>
-        <input type="text"value=""/>
+      <h4>Enter new list item:</h4>
+      <form>
+        <ul data-role="listview">          
+          <input type="text" value="Apples"/>
+        <input type="range" name="points" id="slider" value="5" min="0" max="10"/>
+          <input type="text"value="Whole wheat bread"/>
+        <input type="range" name="points" id="slider" value="5" min="0" max="10"/>
+          <input type="text"value="Carton of eggs"/>
+        <input type="range" name="points" id="slider" value="5" min="0" max="10"/>
+          <input type="text"value="canned tuna"/>
+        <input type="range" name="points" id="slider" value="5" min="0" max="10"/>
+          <input type="text"value="lemons"/>
+        <input type="range" name="points" id="slider" value="5" min="0" max="10"/>
+        </ul>
+    </form>
     </ol>
-    <button id="save">Save</button>
-    <button id="cancel">Cancel</button>
+				<div class="ui-block-c"><button data-theme="e" id="save">Save</button></div>
+				<div class="ui-block-d"><button id="cancel" >Cancel</button></div>
+			</div>
 </div>
 </section>
   </div>
